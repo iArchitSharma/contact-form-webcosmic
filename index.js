@@ -11,10 +11,7 @@ require('dotenv').config();
 
 // Middleware
 app.use(bodyParser.json());
-app.use(cors()); // Allow all origins by default
-
-// If you want to restrict to specific origins, use:
-// app.use(cors({ origin: 'http://localhost:3000' }));
+app.use(cors()); 
 
 // Route to handle form submissions
 app.post('/send', (req, res) => {
